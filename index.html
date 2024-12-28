@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayhan 3.0 snake game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 110vh;
+        background-color: #967878;
+      }
+      #gameContainer {
+        display: none;
+        text-align: center;
+      }
+      #passwordContainer {
+        text-align: center;
+      }
+      input[type="password"] {
+        padding: 10px;
+        font-size: 16px;
+        margin: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #26ff2d;
+        color: rgb(93, 26, 133);
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="passwordContainer">
+      <h1>Enter Password(RP) to Play</h1>
+      <input type="password" id="passwordInput" placeholder="Enter Password" />
+      <button onclick="checkPassword()">Submit</button>
+      <p id="errorMessage" style="color: rgb(47, 0, 255)"></p>
+    </div>
+
+    <div id="gameContainer">
+      <h1>fuck you 3.0</h1>
+      <canvas id="gameCanvas" width="800" height="800"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
